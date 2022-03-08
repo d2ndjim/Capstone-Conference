@@ -113,9 +113,7 @@ nav {
   display: flex;
   flex-direction: column;
   padding-bottom: 4rem;
-  background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.904), rgba(255, 255, 255, 0.938)),
-    url(./images/header.png);
+  background-image: url("images/header.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -141,8 +139,6 @@ nav {
   padding: 1.5rem;
   margin-bottom: 0.5rem;
 }
-
-
 
 .date h3 {
   font-size: 2rem;
@@ -358,7 +354,7 @@ hr {
 }
 
 footer {
-  font-family: var(--font-lato);
+  font-family: "Lato", sans-serif;;
   color: #272a31;
 }
 
@@ -388,25 +384,20 @@ footer {
   margin-left: 0.5rem;
 }
 
-.chinese-lng {
-  display: none;
-}
 
-.info {
+.information {
   padding-left: 1rem;
   padding-right: 1rem;
   display: flex;
   flex-direction: column;
   padding-bottom: 2rem;
-  background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.904), rgba(255, 255, 255, 0.938)),
-    url(../images/header.png);
+  background-image: url("images/header.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.info h2 {
+.information h2 {
   text-align: center;
   color: #ec5442;
   font-size: x-large;
@@ -414,7 +405,7 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-.info h1 {
+.information h1 {
   text-align: center;
   font-family: "COCOGOOSE", sans-serif;
   color: #ec5442;
@@ -422,7 +413,7 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-.info-descr {
+.information-description {
   text-align: center;
   border: 3px solid #d3d3d3;
   background-color: white;
@@ -430,14 +421,14 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-.info-contact h3 {
+.information-contact h3 {
   text-align: center;
   font-weight: 300;
   font-size: 13px;
   margin-bottom: 0.5rem;
 }
 
-.info-contact h4 {
+.information-contact h4 {
   text-align: center;
   font-weight: 600;
   font-size: 14px;
@@ -509,25 +500,13 @@ footer {
 }
 
 .year-fst {
-  background-image:
-    linear-gradient(to right, rgba(242, 109, 109, 0.6), rgba(242, 109, 109, 0.6)),
-    url(../img/album/luis-quintero.jpg);
+  background-image: url("images/font.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.year-sed {
-  background-image:
-    linear-gradient(to right, rgba(242, 109, 109, 0.6), rgba(242, 109, 109, 0.6)),
-    url(../img/album/matheus-bertelli.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.year-thd {
-  background-image:
-    linear-gradient(to right, rgba(242, 109, 109, 0.6), rgba(242, 109, 109, 0.6)),
-    url(../img/album/mentatdgt.jpg);
+.year-sec {
+  background-image: url("images/font.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -761,22 +740,18 @@ footer {
     font-size: 16px;
   }
 
-  .chinese-lng {
-    display: inline;
-  }
-
-  .info {
+  .information {
     padding-left: 8rem;
     padding-right: 8rem;
     padding-top: 12rem;
     padding-bottom: 5rem;
   }
 
-  .info h2 {
+  .information h2 {
     display: none;
   }
 
-  .info h1 {
+  .information h1 {
     max-width: 800px;
     text-align: center;
     margin: auto;
@@ -784,15 +759,15 @@ footer {
     font-size: 50px;
   }
 
-  .info-descr {
+  .information-description {
     margin: 1.5rem 3rem 2rem 3rem;
   }
 
-  .info-contact h3 {
+  .information-contact h3 {
     font-size: 16px;
   }
 
-  .info-contact h4 {
+  .information-contact h4 {
     font-size: 16px;
   }
 
