@@ -124,6 +124,7 @@ nav {
   font-size: x-large;
   font-weight: 300;
   margin-bottom: 0.5rem;
+  
 }
 
 .introduction h1 {
@@ -131,6 +132,12 @@ nav {
   color: #ec5442;
   font-size: xx-large;
   margin-bottom: 0.5rem;
+  background-image: url("images/font.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-clip: initial;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .intro-description {
