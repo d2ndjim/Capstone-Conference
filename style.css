@@ -1,7 +1,12 @@
+@font-face {
+  src: url(./fonts/Cocogoose.ttf);
+  font-family: cocogoose;
+}
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 main {
@@ -31,22 +36,22 @@ a {
   color: inherit;
 }
 
-.top-div {
+.top-bar {
   display: none;
 }
 
-.sportslogo {
+.logopro {
   display: flex;
   align-items: center;
   width: 100%;
   height: auto;
 }
 
-.sportslogo i {
+.logopro i {
   color: #ec5442;
 }
 
-.sportslogo p {
+.logopro p {
   padding-top: 0.1rem;
   text-align: center;
   margin-left: 0.5rem;
@@ -107,27 +112,28 @@ nav {
   height: 150px;
 }
 
-.introduction {
+.intro {
   padding-left: 1rem;
   padding-right: 1rem;
   display: flex;
   flex-direction: column;
   padding-bottom: 4rem;
-  background-image: url("images/header.png");
+  background-image:
+    /* linear-gradient(to right, rgba(255, 255, 255, 0.904), rgba(255, 255, 255, 0.938)), */
+    url(./images/header.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.introduction h2 {
+.intro h2 {
   color: #ec5442;
   font-size: x-large;
   font-weight: 300;
   margin-bottom: 0.5rem;
-  
 }
 
-.introduction h1 {
+.intro h1 {
   font-family: "COCOGOOSE", sans-serif;
   color: #ec5442;
   font-size: xx-large;
@@ -140,20 +146,20 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 
-.intro-description {
-  border: 5px solid white;
+.intro-descr {
+  border: 3px solid white;
   background-color: #f6f6f6;
   padding: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-.date h3 {
+.date-local h3 {
   font-size: 2rem;
   font-weight: 900;
   margin-bottom: 0.5rem;
 }
 
-.date h4 {
+.date-local h4 {
   font-weight: 300;
   margin-bottom: 0.5rem;
 }
@@ -185,7 +191,7 @@ hr {
 }
 
 .program {
-  background-color: rgb(36, 36, 36, 0.5);
+  background-color: #3C3A39;
   display: grid;
   grid-template-columns: 20% 25% auto;
   grid-template-rows: 1fr;
@@ -205,21 +211,20 @@ hr {
   font-size: 16px;
 }
 
-.program-description {
+.program-descr {
   color: #d3d3d3;
   font-size: small;
 }
 
 .join {
-  padding: 0 auto;
+  padding: 1rem;
   width: 80%;
   margin: 2rem auto 0 auto;
   color: white;
-  background-color: #ec5442;
+  background-color: #ec5442;;
   border: none;
   cursor: pointer;
   height: 2rem;
-  text-align: center;
 }
 
 .program-link {
@@ -264,7 +269,7 @@ hr {
 }
 
 .partner {
-  background-color: #272a31;
+  background-color:#272a31;
   padding: 2rem;
   padding-bottom: 3rem;
 }
@@ -309,12 +314,12 @@ hr {
   width: 100%;
 }
 
-.information {
+.info{
   margin: auto;
   grid-column: 2/3;
 }
 
-.information hr {
+.info hr {
   margin-left: 0;
   height: 1px;
 }
@@ -361,7 +366,7 @@ hr {
 }
 
 footer {
-  font-family: "Lato", sans-serif;;
+  font-family: "Lato", sans-serif;
   color: #272a31;
 }
 
@@ -391,20 +396,25 @@ footer {
   margin-left: 0.5rem;
 }
 
+.chinese-lng {
+  display: none;
+}
 
-.information {
+.info {
   padding-left: 1rem;
   padding-right: 1rem;
   display: flex;
   flex-direction: column;
   padding-bottom: 2rem;
-  background-image: url("images/header.png");
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.904), rgba(255, 255, 255, 0.938)),
+    url(./images/bg1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.information h2 {
+.info h2 {
   text-align: center;
   color: #ec5442;
   font-size: x-large;
@@ -412,7 +422,7 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-.information h1 {
+.info h1 {
   text-align: center;
   font-family: "COCOGOOSE", sans-serif;
   color: #ec5442;
@@ -420,7 +430,7 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-.information-description {
+.info-descr {
   text-align: center;
   border: 3px solid #d3d3d3;
   background-color: white;
@@ -428,14 +438,14 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-.information-contact h3 {
+.info-contact h3 {
   text-align: center;
   font-weight: 300;
   font-size: 13px;
   margin-bottom: 0.5rem;
 }
 
-.information-contact h4 {
+.info-contact h4 {
   text-align: center;
   font-weight: 600;
   font-size: 14px;
@@ -507,19 +517,25 @@ footer {
 }
 
 .year-fst {
-  background-image: url("images/font.jpg");
+  background-image:
+    url(./images/font.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.year-sec {
-  background-image: url("images/font.jpg");
+.year-sed {
+  background-image:
+    url(./images/font.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.display-none {
+  display: none;
 }
 
 @media screen and (min-width: 760px) {
-  .top-div {
+  .top-bar {
     display: flex;
     background: #272a31;
     color: #d3d3d3;
@@ -550,7 +566,7 @@ footer {
     box-shadow: 0 0 5px;
   }
 
-  .top-div-ul {
+  .top-bar-ul {
     width: 25%;
     display: flex;
     justify-content: space-between;
@@ -611,22 +627,22 @@ footer {
     border: none;
   }
 
-  .introduction {
+  .intro {
     padding-top: 12rem;
     padding-left: 8rem;
     padding-bottom: 4rem;
   }
 
-  .introduction h2 {
+  .intro h2 {
     font-size: xx-large;
   }
 
-  .introduction h1 {
+  .intro h1 {
     font-size: 50px;
     max-width: 900px;
   }
 
-  .intro-description {
+  .intro-descr {
     max-width: 600px;
     margin-bottom: 2rem;
   }
@@ -671,7 +687,7 @@ footer {
     margin-bottom: 0.8rem;
   }
 
-  .program-description {
+  .program-descr {
     font-size: 15.5px;
     text-align: center;
     margin-bottom: 0.8rem;
@@ -747,18 +763,22 @@ footer {
     font-size: 16px;
   }
 
-  .information {
+  .chinese-lng {
+    display: inline;
+  }
+
+  .info {
     padding-left: 8rem;
     padding-right: 8rem;
     padding-top: 12rem;
     padding-bottom: 5rem;
   }
 
-  .information h2 {
+  .info h2 {
     display: none;
   }
 
-  .information h1 {
+  .info h1 {
     max-width: 800px;
     text-align: center;
     margin: auto;
@@ -766,15 +786,15 @@ footer {
     font-size: 50px;
   }
 
-  .information-description {
+  .info-descr {
     margin: 1.5rem 3rem 2rem 3rem;
   }
 
-  .information-contact h3 {
+  .info-contact h3 {
     font-size: 16px;
   }
 
-  .information-contact h4 {
+  .info-contact h4 {
     font-size: 16px;
   }
 
