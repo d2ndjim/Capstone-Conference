@@ -104,8 +104,9 @@ const generateSpeaker = (speaker) => {
   proffession.innerText = speaker.proffession;
   description.innerText = speaker.description;
 };
+
 speakers.map((speaker, index) => {
-  if (window.innerWidth <= 760) {
+  if (window.innerWidth <= 768) {
     if (index < 2) {
       generateSpeaker(speaker);
     }

@@ -81,7 +81,6 @@ nav {
   width: 100%;
   font-size: 25px;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid #ec5442;
 }
 
 .nav-ul li a {
@@ -91,7 +90,6 @@ nav {
 
 .campaign {
   width: 160px;
-  height: 40px;
   border: 3px solid #ec5442;
   background-color: white;
   padding: 0.8rem;
@@ -99,6 +97,7 @@ nav {
   font-weight: 500;
   font-size: 22px;
   margin-left: 2rem;
+  text-align: center;
 }
 
 .logo {
@@ -118,8 +117,7 @@ nav {
   display: flex;
   flex-direction: column;
   padding-bottom: 4rem;
-  background-image: /* linear-gradient(to right, rgba(255, 255, 255, 0.904), rgba(255, 255, 255, 0.938)), */
-    url(./images/header.png);
+  background-image: url(./images/header.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -165,7 +163,7 @@ nav {
 
 .main-program {
   background-color: #272a31;
-  padding: 2rem 0.5rem 2rem 0.5rem;
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
 }
@@ -641,9 +639,8 @@ footer {
   }
 
   .main-program {
-    padding-left: 8rem;
-    padding-right: 8rem;
-    padding-top: 3rem;
+    width: 100%;
+    align-items: center;
   }
 
   .main-program h2 {
@@ -653,15 +650,15 @@ footer {
   .programs {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 90%;
+    column-gap: 3px;
   }
 
   .program {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 150px;
-    margin: 0 auto;
-    margin-right: 5px;
+    row-gap: 9px;
   }
 
   .program-icon {
@@ -750,7 +747,7 @@ footer {
 
   .about-desktop {
     color: #fff;
-    background-color: #3c3a39;
+    background-color: #272a31;
   }
 
   .copyright {
@@ -779,6 +776,10 @@ footer {
     margin: auto;
     margin-bottom: 1rem;
     font-size: 50px;
+  }
+
+  .abt-desk-logo {
+    display: none;
   }
 
   .info-descr {
