@@ -11,8 +11,8 @@
 - Git and GitHub
 
 ## Live Demo (if available)
-<img src="Desktop.png" alt="Desktop Screenshot">
-<img src="mobile.png" alt="mobile Screenshot">
+<img src="images/Desktop.png" alt="Desktop Screenshot">
+<img src="images/mobile.png" alt="mobile Screenshot">
 
 - You can acces a live version of the project [Here](https://d2ndjim.github.io/Capstone-Conference/)
 
