@@ -657,6 +657,7 @@ footer {
     margin-top: 3.5rem;
     flex-wrap: wrap;
     justify-content: space-around;
+    box-sizing: border-box;
   }
 
   .program {
