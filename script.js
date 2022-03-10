@@ -1,4 +1,4 @@
-//Menu DOM
+// Menu DOM
 const openMenu = () => {
   document.querySelector('header').classList.add('visible');
   document.querySelector('.closeBtn').classList.toggle('visible');
@@ -10,7 +10,7 @@ const closeMenu = () => {
 
 document.querySelector('.fa-bars').addEventListener('click', openMenu);
 document.querySelector('.closeBtn').addEventListener('click', closeMenu);
-const links = document.querySelectorAll('.menu-link')
+const links = document.querySelectorAll('.menu-link');
 links.forEach((item) => {
   item.addEventListener('click', closeMenu);
 });
@@ -20,38 +20,38 @@ const speakers = [
   {
     name: 'Cristiano Ronaldo',
     proffession:
-      'Berkman professor of Entreneurial Legal studies at harvard Law school',
+      'Professional Footballer',
     description:
-      ' bekler studies commons-based Berkman professor of Entreneurial Legal studies at harvard Law school',
+      ' Cristiano Ronaldo is one of the best player to ever play the game of football. He currently plays for Manchester United Football Club in England.',
     photo: './images/cristiano.webp',
-    alt: 'Photo by Christopher Campbell on Unsplash',
+    alt: 'cristiano',
   },
   {
     name: 'Lionel Messi',
     proffession:
-      'Berkman professor of Entreneurial Legal studies at harvard Law school',
+      'Professional Football Player',
     description:
-      ' bekler studies commons-based Berkman professor of Entreneurial Legal studies at harvard Law school',
+      ' Lionel Messi is a football player whose skills and trophy cabinet speak for. He has won the mantle of best football player for a record six times',
     photo: './images/messi.jpg',
-    alt: 'Photo by Nicoles Horn on Unsplash',
+    alt: 'Messi',
   },
   {
     name: 'Lebron James',
     proffession:
-      'Berkman professor of Entreneurial Legal studies at harvard Law school',
+      'Basket Ball Player',
     description:
-      ' bekler studies commons-based Berkman professor of Entreneurial Legal studies at harvard Law school',
+      ' Lebron James is seen as the face of modern basketball game. He has won the NBA championship four times in his illustrious career',
     photo: './images/lebron.jpg',
-    alt: 'Photo by Aatik Tsneem on Unsplash',
+    alt: 'Lebron',
   },
   {
     name: 'Azizat Oshoala',
     proffession:
-      'Berkman professor of Entreneurial Legal studies at harvard Law school',
+      'Professional Football Player',
     description:
-      ' bekler studies commons-based Berkman professor of Entreneurial Legal studies at harvard Law school',
+      'Azizat is a female football player from Nigeria who plays for FC Barcelona in Spain. She helps to pave the way for women in football and Sports.',
     photo: './images/Azizat.jfif',
-    alt: 'Photo by Christopher Campbell on Unsplash',
+    alt: 'Oshoala',
   },
   {
     name: 'Jack Hugh',
@@ -60,16 +60,16 @@ const speakers = [
     description:
       ' bekler studies commons-based Berkman professor of Entreneurial Legal studies at harvard Law school',
     photo: './images/jack.jpg',
-    alt: 'Photo by Jack Finnigan on Unsplash',
+    alt: 'Jack',
   },
   {
     name: 'Lavanya',
     proffession:
-      'Berkman professor of Entreneurial Legal studies at harvard Law school',
+      'Sports Analyst/Advocate',
     description:
-      ' bekler studies commons-based Berkman professor of Entreneurial Legal studies at harvard Law school',
+      ' Lavanya is a sports analyst with 10 years experience of sports advocating and analysis',
     photo: './images/Lavanya.jpg',
-    alt: 'Photo by Tamarcus Brown on Unsplash',
+    alt: 'lavanya',
   },
 ];
 const generateSpeaker = (speaker) => {
@@ -115,7 +115,6 @@ speakers.map((speaker, index) => {
   return speaker;
 });
 
-
 const openMore = () => {
   speakers.map((speaker, index) => {
     if (index >= 2) generateSpeaker(speaker);
@@ -123,10 +122,9 @@ const openMore = () => {
   });
 };
 
-function removeMore () {
-  moreBtn.classList.add('display-none')
+const moreBtn = document.querySelector('.more');
+function removeMore() {
+  moreBtn.classList.add('display-none');
 }
-const moreBtn = document.querySelector('.more')
 moreBtn.addEventListener('click', openMore);
 moreBtn.addEventListener('click', removeMore);
-

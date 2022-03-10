@@ -118,8 +118,7 @@ nav {
   display: flex;
   flex-direction: column;
   padding-bottom: 4rem;
-  background-image:
-    /* linear-gradient(to right, rgba(255, 255, 255, 0.904), rgba(255, 255, 255, 0.938)), */
+  background-image: /* linear-gradient(to right, rgba(255, 255, 255, 0.904), rgba(255, 255, 255, 0.938)), */
     url(./images/header.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -191,7 +190,7 @@ hr {
 }
 
 .program {
-  background-color: #3C3A39;
+  background-color: #3c3a39;
   display: grid;
   grid-template-columns: 20% 25% auto;
   grid-template-rows: 1fr;
@@ -221,7 +220,7 @@ hr {
   width: 80%;
   margin: 2rem auto 0 auto;
   color: white;
-  background-color: #ec5442;;
+  background-color: #ec5442;
   border: none;
   cursor: pointer;
   height: 2rem;
@@ -269,7 +268,7 @@ hr {
 }
 
 .partner {
-  background-color:#272a31;
+  background-color: #272a31;
   padding: 2rem;
   padding-bottom: 3rem;
 }
@@ -312,11 +311,6 @@ hr {
   grid-column: 1/2;
   height: auto;
   width: 100%;
-}
-
-.info{
-  margin: auto;
-  grid-column: 2/3;
 }
 
 .info hr {
@@ -405,6 +399,8 @@ footer {
   padding-right: 1rem;
   display: flex;
   flex-direction: column;
+  margin: auto;
+  grid-column: 2/3;
   padding-bottom: 2rem;
   background-image:
     linear-gradient(to right, rgba(255, 255, 255, 0.904), rgba(255, 255, 255, 0.938)),
@@ -517,15 +513,13 @@ footer {
 }
 
 .year-fst {
-  background-image:
-    url(./images/font.jpg);
+  background-image: url(./images/font.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .year-sed {
-  background-image:
-    url(./images/font.jpg);
+  background-image: url(./images/font.jpg);
   background-size: cover;
   background-position: center;
 }
