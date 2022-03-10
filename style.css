@@ -223,7 +223,6 @@ hr {
   background-color: #ec5442;
   border: none;
   cursor: pointer;
-  height: 2rem;
 }
 
 .program-link {
@@ -528,7 +527,7 @@ footer {
   display: none;
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
   .top-bar {
     display: flex;
     background: #272a31;
@@ -652,21 +651,17 @@ footer {
   }
 
   .programs {
-    display: flex;
-    flex-direction: row;
-    margin-top: 3.5rem;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 
   .program {
     display: flex;
     flex-direction: column;
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
     align-items: center;
-    max-width: 158px;
+    width: 150px;
+    margin: 0 auto;
+    margin-right: 5px;
   }
 
   .program-icon {
@@ -751,6 +746,11 @@ footer {
 
   .footer-s {
     padding: 3rem 8rem 3rem 8rem;
+  }
+
+  .about-desktop {
+    color: #fff;
+    background-color: #3c3a39;
   }
 
   .copyright {
