@@ -1,24 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sports Conference</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/870e4168d3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/4f02d055e5.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://kit.fontawesome.com/870e4168d3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet" />
+    <script src="script.js" defer></script>
   </head>
+
   <body>
     <header>
-      <div class="top-div">
-        <ul class="top-div-ul">
-          <li><i class="fab fa-facebook-f"></i></i></li>
-          <li><i class="fab fa-twitter"></i></i></li>
+      <div class="top-bar">
+        <ul class="top-bar-ul">
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
           <li>English</li>
           <li>Mypage</li>
           <li>Logout</li>
@@ -27,33 +35,34 @@
       <div class="header-bar">
         <div class="logo">
           <a href="./index.html"
-            ><div class="sportslogo">
+            ><div class="logopro">
             <i class="fa-solid fa-baseball"></i>
-            <p>Sports</p>
+            <p>SPORTS </p>
+            <!-- <p>IG</p> -->
           </div></a
           >
           <div class="closeBtn"><i class="fas fa-times fa-2x"></i></div>
         </div>
         <nav>
           <ul class="nav-ul">
-            <li><a href="./about.html">About</a></li>
-            <li><a href="#program">Program</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#partner">Sponsors</a></li>
-            <li><a href="#">News</a></li>
+            <li><a class="menu-link" href="./about.html">About</a></li>
+            <li><a class="menu-link" href="#program">Program</a></li>
+            <li><a class="menu-link" href="#">Join</a></li>
+            <li><a class="menu-link" href="#partner">Sponsors</a></li>
+            <li><a class="menu-link" href="#">News</a></li>
           </ul>
         </nav>
         <button class="campaign">Campaign</button>
       </div>
     </header>
     <main>
-      <section class="introduction">
+      <section class="intro">
         <div class="menu">
           <i class="fas fa-bars fa-2x"></i>
         </div>
         <h2>"Hello! Sharing world"</h2>
         <h1>WORLD ANNUAL SPORTS CONFERENCE</h1>
-        <div class="intro-description">
+        <div class="intro-descr">
           <p>
             This page describes the World annual sports conference 
             which holds annually. The aim of the conference is to
@@ -61,9 +70,9 @@
             and people together and also to discuss ways to move forward.
           </p>
         </div>
-        <div class="date">
+        <div class="date-local">
           <h3>2022.03.07(MON) ~ 11(FRI)</h3>
-          <h4> Estadio Santiago Bernabeu, Madrid, Spain</h4>
+          <h4>Estadio Santiago Bernabeu, Madrid, Spain</h4>
         </div>
       </section>
       <section class="main-program" id="program">
@@ -77,7 +86,7 @@
               alt="lecture"
             />
             <h3 class="program-title">Lecture</h3>
-            <p class="program-description">
+            <p class="program-descr">
               Listen to the speakers from various countries about the messages
               of sharing and opening.
             </p>
@@ -89,17 +98,17 @@
               alt="Exhibition"
             />
             <h3 class="program-title">Exhibition</h3>
-            <p class="program-description">
-              Appreciate various creations applying CC license of
-              sportsmen, from diverse countries and sport.
+            <p class="program-descr">
+              Appreciate athletic exhibitions from sports academies from 
+              various countries.
             </p>
           </div>
           <div class="program">
             <img class="program-icon" src="./images/chat.png" alt="Forum" />
             <h3 class="program-title">Forum</h3>
-            <p class="program-description">
-              Have the time to share your thoughts and opinions with experts for 
-              each sport.
+            <p class="program-descr">
+              Listen to the speakers from various countries about the messages
+              of sharing and opening.
             </p>
           </div>
           <div class="program">
@@ -109,9 +118,8 @@
               alt="workshops"
             />
             <h3 class="program-title">Workshop</h3>
-            <p class="program-description">
-              Listen to the speakers from various countries about the messages
-              of sharing and opening.
+            <p class="program-descr">
+              Share your thoughts and opinions with sports experts
             </p>
           </div>
           <div class="program">
@@ -121,8 +129,9 @@
               alt="ignite"
             />
             <h3 class="program-title">Ignite</h3>
-            <p class="program-description">
-              Get opportunities to network with athletes around the world
+            <p class="program-descr">
+              Get opportunities to network with sports experts and
+              fellow sport lovers and athletes
             </p>
           </div>
         </div>
@@ -130,9 +139,11 @@
         <button class="join">Join annual sports Conference 2022</button>
       </section>
       <section class="featured-speaker">
-        <h2>featured-speaker</h2>
+        <h2>Featured Speakers</h2>
         <hr />
-        <div class="speakers"></div>
+        <div class="speakers">
+          
+        </div>
         <button class="more">
           MORE
           <i class="fas fa-sort-down fa-lg"></i>
@@ -146,23 +157,23 @@
         <div class="logos">
           <img
             class="partner-logo"
-            src="./img/logos/logo-airbnb-404px-grey-1.png"
-            alt="Airbnb logo"
+            src="./images/Adidas_Logo.png"
+            alt="Adidas logo"
           />
           <img
             class="partner-logo"
-            src="./img/logos/unnamed.png"
-            alt="Google logo"
+            src="./images/Nike.png"
+            alt="Nike logo"
           />
           <img
             class="partner-logo"
-            src="./img/logos/mozilla-logo-gray.png"
-            alt="mozilla logo"
+            src="./images/playstation.png"
+            alt="playstation logo"
           />
           <img
             class="partner-logo"
-            src="./img/logos/logo-instantgames.png"
-            alt="Instant games logo"
+            src="./images/Fifa.png"
+            alt="FIFA logo"
           />
         </div>
       </section>
@@ -170,16 +181,13 @@
         <div class="logo-footer">
           <div class="logopro">
             <i class="fa-solid fa-baseball"></i>
-            <p>WORLD SPORTS </p>
+            <p>SPORTS </p>
           </div>
         </div>
         <div class="copyright">
-          2022 WORLD SPORTS Annual Conference. <br />Some right Reserved.,<br /> 
+          2022 WORLD SPORTS Annual Conference. <br />Some right Reserved.,<br />
         </div>
       </section>
     </footer>
-    
-    
-    <script src="" async defer></script>
   </body>
 </html>

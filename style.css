@@ -1,3 +1,8 @@
+@font-face {
+  src: url(./fonts/Cocogoose.ttf);
+  font-family: cocogoose;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -31,22 +36,22 @@ a {
   color: inherit;
 }
 
-.top-div {
+.top-bar {
   display: none;
 }
 
-.sportslogo {
+.logopro {
   display: flex;
   align-items: center;
   width: 100%;
   height: auto;
 }
 
-.sportslogo i {
+.logopro i {
   color: #ec5442;
 }
 
-.sportslogo p {
+.logopro p {
   padding-top: 0.1rem;
   text-align: center;
   margin-left: 0.5rem;
@@ -76,7 +81,6 @@ nav {
   width: 100%;
   font-size: 25px;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid #ec5442;
 }
 
 .nav-ul li a {
@@ -86,7 +90,6 @@ nav {
 
 .campaign {
   width: 160px;
-  height: 40px;
   border: 3px solid #ec5442;
   background-color: white;
   padding: 0.8rem;
@@ -94,6 +97,7 @@ nav {
   font-weight: 500;
   font-size: 22px;
   margin-left: 2rem;
+  text-align: center;
 }
 
 .logo {
@@ -107,57 +111,59 @@ nav {
   height: 150px;
 }
 
-.introduction {
+.intro {
   padding-left: 1rem;
   padding-right: 1rem;
   display: flex;
   flex-direction: column;
   padding-bottom: 4rem;
-  background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.904), rgba(255, 255, 255, 0.938)),
-    url(./images/header.png);
+  background-image: url(./images/header.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.introduction h2 {
+.intro h2 {
   color: #ec5442;
   font-size: x-large;
   font-weight: 300;
   margin-bottom: 0.5rem;
 }
 
-.introduction h1 {
+.intro h1 {
   font-family: "COCOGOOSE", sans-serif;
   color: #ec5442;
   font-size: xx-large;
   margin-bottom: 0.5rem;
+  background-image: url("images/font.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-clip: initial;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.intro-description {
-  border: 5px solid white;
+.intro-descr {
+  border: 3px solid white;
   background-color: #f6f6f6;
   padding: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
-
-
-.date h3 {
+.date-local h3 {
   font-size: 2rem;
   font-weight: 900;
   margin-bottom: 0.5rem;
 }
 
-.date h4 {
+.date-local h4 {
   font-weight: 300;
   margin-bottom: 0.5rem;
 }
 
 .main-program {
   background-color: #272a31;
-  padding: 2rem 0.5rem 2rem 0.5rem;
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
 }
@@ -182,7 +188,7 @@ hr {
 }
 
 .program {
-  background-color: rgb(36, 36, 36, 0.5);
+  background-color: #3c3a39;
   display: grid;
   grid-template-columns: 20% 25% auto;
   grid-template-rows: 1fr;
@@ -202,21 +208,19 @@ hr {
   font-size: 16px;
 }
 
-.program-description {
+.program-descr {
   color: #d3d3d3;
   font-size: small;
 }
 
 .join {
-  padding: 0 auto;
+  padding: 1rem;
   width: 80%;
   margin: 2rem auto 0 auto;
   color: white;
   background-color: #ec5442;
   border: none;
   cursor: pointer;
-  height: 2rem;
-  text-align: center;
 }
 
 .program-link {
@@ -306,12 +310,7 @@ hr {
   width: 100%;
 }
 
-.information {
-  margin: auto;
-  grid-column: 2/3;
-}
-
-.information hr {
+.info hr {
   margin-left: 0;
   height: 1px;
 }
@@ -358,7 +357,7 @@ hr {
 }
 
 footer {
-  font-family: var(--font-lato);
+  font-family: "Lato", sans-serif;
   color: #272a31;
 }
 
@@ -397,10 +396,12 @@ footer {
   padding-right: 1rem;
   display: flex;
   flex-direction: column;
+  margin: auto;
+  grid-column: 2/3;
   padding-bottom: 2rem;
   background-image:
     linear-gradient(to right, rgba(255, 255, 255, 0.904), rgba(255, 255, 255, 0.938)),
-    url(../images/header.png);
+    url(./images/bg1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -509,31 +510,23 @@ footer {
 }
 
 .year-fst {
-  background-image:
-    linear-gradient(to right, rgba(242, 109, 109, 0.6), rgba(242, 109, 109, 0.6)),
-    url(../img/album/luis-quintero.jpg);
+  background-image: url(./images/font.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .year-sed {
-  background-image:
-    linear-gradient(to right, rgba(242, 109, 109, 0.6), rgba(242, 109, 109, 0.6)),
-    url(../img/album/matheus-bertelli.jpg);
+  background-image: url(./images/font.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.year-thd {
-  background-image:
-    linear-gradient(to right, rgba(242, 109, 109, 0.6), rgba(242, 109, 109, 0.6)),
-    url(../img/album/mentatdgt.jpg);
-  background-size: cover;
-  background-position: center;
+.display-none {
+  display: none;
 }
 
-@media screen and (min-width: 760px) {
-  .top-div {
+@media screen and (min-width: 768px) {
+  .top-bar {
     display: flex;
     background: #272a31;
     color: #d3d3d3;
@@ -564,7 +557,7 @@ footer {
     box-shadow: 0 0 5px;
   }
 
-  .top-div-ul {
+  .top-bar-ul {
     width: 25%;
     display: flex;
     justify-content: space-between;
@@ -625,30 +618,29 @@ footer {
     border: none;
   }
 
-  .introduction {
+  .intro {
     padding-top: 12rem;
     padding-left: 8rem;
     padding-bottom: 4rem;
   }
 
-  .introduction h2 {
+  .intro h2 {
     font-size: xx-large;
   }
 
-  .introduction h1 {
+  .intro h1 {
     font-size: 50px;
     max-width: 900px;
   }
 
-  .intro-description {
+  .intro-descr {
     max-width: 600px;
     margin-bottom: 2rem;
   }
 
   .main-program {
-    padding-left: 8rem;
-    padding-right: 8rem;
-    padding-top: 3rem;
+    width: 100%;
+    align-items: center;
   }
 
   .main-program h2 {
@@ -656,20 +648,17 @@ footer {
   }
 
   .programs {
-    display: flex;
-    flex-direction: row;
-    margin-top: 3.5rem;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 90%;
+    column-gap: 3px;
   }
 
   .program {
     display: flex;
     flex-direction: column;
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
     align-items: center;
-    max-width: 158px;
+    row-gap: 9px;
   }
 
   .program-icon {
@@ -685,7 +674,7 @@ footer {
     margin-bottom: 0.8rem;
   }
 
-  .program-description {
+  .program-descr {
     font-size: 15.5px;
     text-align: center;
     margin-bottom: 0.8rem;
@@ -756,6 +745,11 @@ footer {
     padding: 3rem 8rem 3rem 8rem;
   }
 
+  .about-desktop {
+    color: #fff;
+    background-color: #272a31;
+  }
+
   .copyright {
     flex: 3;
     font-size: 16px;
@@ -782,6 +776,10 @@ footer {
     margin: auto;
     margin-bottom: 1rem;
     font-size: 50px;
+  }
+
+  .abt-desk-logo {
+    display: none;
   }
 
   .info-descr {

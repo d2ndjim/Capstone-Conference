@@ -1,59 +1,36 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Sports Conference Capstone Project
 
-> Description the project.
+> This project satisfies the requirements of microverse module1 capstone project. It' describes an annual sports conference
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML/CSS and JavaScript
+- Git and GitHub
 
 ## Live Demo (if available)
+<img src="images/Desktop.png" alt="Desktop Screenshot">
+<img src="images/mobile.png" alt="mobile Screenshot">
 
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
+- You can acces a live version of the project [Here](https://d2ndjim.github.io/Capstone-Conference/)
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
+- VS code
+- Git Bash
 ### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
+- run the command on your git bash terminal: git clone `https://github.com/d2ndjim/Capstone-Conference.git`
 ## Authors
 
-👤 **Author1**
+👤 **Lekan Jimoh**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
+- GitHub: [@d2ndjim](https://github.com/d2ndjim)
+- Twitter: [@d2ndjim](https://twitter.com/d2ndjim_)
+- LinkedIn: [Lekan Jimoh](https://linkedin.com/in/lekanj)
 ## 🤝 Contributing
-
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
@@ -64,10 +41,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
+- Hat tip to Cindy Shin whose design was used to create the project
+- Hat tip to @microverseinc for putting this project together
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
