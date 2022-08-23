@@ -10,11 +10,9 @@
 - HTML/CSS and JavaScript
 - Git and GitHub
 
-## Live Demo (if available)
+## [Live Demo](https://d2ndjim.github.io/Capstone-Conference/)
 <img src="images/Desktop.png" alt="Desktop Screenshot">
 <img src="images/mobile.png" alt="mobile Screenshot">
-
-- You can acces a live version of the project [Here](https://d2ndjim.github.io/Capstone-Conference/)
 
 To get a local copy up and running follow these simple example steps.
 
