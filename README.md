@@ -4,6 +4,7 @@
 
 > This project satisfies the requirements of microverse module1 capstone project. It' describes an annual sports conference
 
+![image](https://user-images.githubusercontent.com/73438276/198064273-fdbc7695-032f-49b9-acc0-c7a629c4d80a.png)
 
 ## Built With
 
@@ -11,9 +12,6 @@
 - Git and GitHub
 
 ## [Live Demo](https://d2ndjim.github.io/Capstone-Conference/)
-<img src="images/Desktop.png" alt="Desktop Screenshot">
-<img src="images/mobile.png" alt="mobile Screenshot">
-
 
 To get a local copy up and running follow these simple example steps.
 
